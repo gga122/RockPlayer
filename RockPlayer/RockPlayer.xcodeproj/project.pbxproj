@@ -18,6 +18,8 @@
 		BA5EBA6D22F3478A0030E970 /* RockRender.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5EBA6B22F3478A0030E970 /* RockRender.c */; };
 		BA5EBA7022F348670030E970 /* RockEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5EBA6E22F348670030E970 /* RockEncoder.h */; };
 		BA5EBA7122F348670030E970 /* RockEncoder.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5EBA6F22F348670030E970 /* RockEncoder.c */; };
+		BA5EBA7422F34A640030E970 /* RockMediaPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5EBA7222F34A640030E970 /* RockMediaPlayer.h */; };
+		BA5EBA7522F34A640030E970 /* RockMediaPlayer.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5EBA7322F34A640030E970 /* RockMediaPlayer.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		BA5EBA6B22F3478A0030E970 /* RockRender.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RockRender.c; sourceTree = "<group>"; };
 		BA5EBA6E22F348670030E970 /* RockEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RockEncoder.h; sourceTree = "<group>"; };
 		BA5EBA6F22F348670030E970 /* RockEncoder.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RockEncoder.c; sourceTree = "<group>"; };
+		BA5EBA7222F34A640030E970 /* RockMediaPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RockMediaPlayer.h; sourceTree = "<group>"; };
+		BA5EBA7322F34A640030E970 /* RockMediaPlayer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RockMediaPlayer.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 				BA5EBA6F22F348670030E970 /* RockEncoder.c */,
 				BA5EBA5C22F33CE90030E970 /* RockDecoder.c */,
 				BA5EBA6B22F3478A0030E970 /* RockRender.c */,
+				BA5EBA7322F34A640030E970 /* RockMediaPlayer.c */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -86,6 +91,7 @@
 				BA5EBA6E22F348670030E970 /* RockEncoder.h */,
 				BA5EBA5B22F33CE90030E970 /* RockDecoder.h */,
 				BA5EBA6A22F3478A0030E970 /* RockRender.h */,
+				BA5EBA7222F34A640030E970 /* RockMediaPlayer.h */,
 			);
 			path = "Public Header";
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 				BA5EBA6922F3435E0030E970 /* RockAvailability.h in Headers */,
 				BA5EBA6122F33DE20030E970 /* RockISA.h in Headers */,
 				BA5EBA6C22F3478A0030E970 /* RockRender.h in Headers */,
+				BA5EBA7422F34A640030E970 /* RockMediaPlayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +194,7 @@
 			files = (
 				BA5EBA6422F33EBC0030E970 /* RockISA.c in Sources */,
 				BA5EBA7122F348670030E970 /* RockEncoder.c in Sources */,
+				BA5EBA7522F34A640030E970 /* RockMediaPlayer.c in Sources */,
 				BA5EBA5E22F33CE90030E970 /* RockDecoder.c in Sources */,
 				BA5EBA6D22F3478A0030E970 /* RockRender.c in Sources */,
 			);
