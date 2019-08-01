@@ -8,6 +8,9 @@
 
 #include "RockMediaPlayer.h"
 
+typedef struct RockMediaPlayerCallbacks RockMediaPlayerCallbacks;
+
 struct RockMediaPlayer {
     
+    RockMediaPlayerCallbacks callbacks;
 };
