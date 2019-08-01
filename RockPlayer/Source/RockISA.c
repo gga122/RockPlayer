@@ -15,7 +15,7 @@ void RPRetain(RPObjectRef rp) {
     }
     
     RockISA *isa = (RockISA *)rp;
-    isa->refCnt++;
+    isa->ref_cnt++;
 }
 
 void RPRelease(RPObjectRef rp) {
@@ -24,9 +24,9 @@ void RPRelease(RPObjectRef rp) {
     }
     
     RockISA *isa = (RockISA *)rp;
-    isa->refCnt--;
+    isa->ref_cnt--;
     
-    if (isa->refCnt == 0) {
+    if (isa->ref_cnt == 0) {
         free((void *)rp);
     }
 }
@@ -37,5 +37,5 @@ RPInteger RPGetRetainCount(RPObjectRef rp) {
     }
     
     RockISA *isa = (RockISA *)rp;
-    return isa->refCnt;
+    return isa->ref_cnt;
 }

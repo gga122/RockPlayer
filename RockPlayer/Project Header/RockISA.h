@@ -15,7 +15,7 @@
 /* All Class in 'RockPlayer' MUST contain this and make it at the first. */
 struct RockISA {
     RPInteger version;
-    RPInteger refCnt;
+    RPInteger ref_cnt;
 };
 
 typedef struct RockISA RockISA;
