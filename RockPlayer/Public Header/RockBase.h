@@ -1,13 +1,15 @@
 //
-//  RockDefines.h
+//  RockBase.h
 //  RockPlayer
 //
 //  Created by Henry on 2019/8/1.
 //  Copyright © 2019 Mickyzhu. All rights reserved.
 //
 
-#ifndef RockDefines_h
-#define RockDefines_h
+#ifndef RockBase_h
+#define RockBase_h
+
+#include "RockAvailability.h"
 
 #if __LP64__
 typedef float RPFloat;
@@ -19,8 +21,9 @@ typedef int RPInteger;
 typedef unsigned int RPUInteger;
 #endif
 
+typedef unsigned char RPBoolean;
+
 #define RPINTEGER_DEFINED 1
 #define RPFLOAT_DEFINED 1
 
-
-#endif /* RockDefines_h */
+#endif /* RockBase_h */

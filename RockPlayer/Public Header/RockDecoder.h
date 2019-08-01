@@ -10,7 +10,7 @@
 #define RockDecoder_h
 
 #include <stdio.h>
-#include "RockDefines.h"
+#include "RockBase.h"
 
 
 

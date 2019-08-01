@@ -10,9 +10,11 @@
 #define RockISA_h
 
 #include <stdio.h>
-#include "RockDefines.h"
+#include "RockBase.h"
 
+/* All Class in 'RockPlayer' MUST contain this and make it at the first. */
 struct RockISA {
+    RPInteger version;
     RPInteger refCnt;
 };
 
@@ -20,8 +22,12 @@ typedef struct RockISA RockISA;
 
 typedef const void * RPObjectRef;
 
-void RPRetain(RPObjectRef rp);
-void RPRelease(RPObjectRef rp);
-RPInteger RPGetRetainCount(RPObjectRef rp);
+RP_EXPORT void RPRetain(RPObjectRef rp);
+
+RP_EXPORT void RPRelease(RPObjectRef rp);
+
+RP_EXPORT RPInteger RPGetRetainCount(RPObjectRef rp);
+
+RP_EXPORT RPBoolean RPEqual(RPObjectRef rp1, RPObjectRef rp2);
 
 #endif /* RockISA_h */
