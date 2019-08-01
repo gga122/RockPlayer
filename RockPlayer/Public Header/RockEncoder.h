@@ -11,7 +11,7 @@
 
 #include "RockBase.h"
 
-typedef const struct RockEncoder * RockEncoderRef;
+typedef struct RockEncoder * RockEncoderRef;
 
 RP_EXPORT RockEncoderRef rock_encoder_create(void) RP_NULLABLE;
 

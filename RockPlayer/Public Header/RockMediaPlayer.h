@@ -10,10 +10,14 @@
 #define RockMediaPlayer_h
 
 #include "RockBase.h"
+#include "RockDecoder.h"
+#include "RockRender.h"
 
 typedef RPUInteger RockMediaPlayerState;
 
-typedef const struct RockMediaPlayer * RockMediaPlayerRef;
+typedef struct RockMediaPlayer * RockMediaPlayerRef;
+
+RP_EXPORT RockMediaPlayerRef rock_media_player_create(RockDecoderRef decoder, RockRenderRef render) RP_NULLABLE;
 
 RP_EXPORT void rock_media_player_play(RockMediaPlayerRef player);
 RP_EXPORT void rock_media_player_pause(RockMediaPlayerRef player);

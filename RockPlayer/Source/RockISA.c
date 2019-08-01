@@ -27,7 +27,7 @@ void RPRelease(RPObjectRef rp) {
     isa->ref_cnt--;
     
     if (isa->ref_cnt == 0) {
-        free((void *)rp);
+        isa->deallocate(isa);
     }
 }
 
@@ -38,4 +38,12 @@ RPInteger RPGetRetainCount(RPObjectRef rp) {
     
     RockISA *isa = (RockISA *)rp;
     return isa->ref_cnt;
+}
+
+RP_EXPORT void RPDeallocate(RPObjectRef rp) {
+    if (rp == NULL) {
+        return;
+    }
+    
+    free((void *)rp);
 }
