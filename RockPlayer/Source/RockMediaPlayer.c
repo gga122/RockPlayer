@@ -25,12 +25,15 @@ struct RockMediaPlayer {
 };
 typedef struct RockMediaPlayer RockMediaPlayer;
 
+void rock_media_player_deallocate(RPObjectRef obj);
+
 RockMediaPlayerRef rock_media_player_create(const RockDecoderRef decoder, RockRenderRef render) {
     if (decoder == NULL || render == NULL) {
         return NULL;
     }
     
     RockMediaPlayerRef player = calloc(1, sizeof(RockMediaPlayer));
+    player->isa.deallocate = rock_media_player_deallocate;
     
     player->context.decoder = decoder;
     RPRetain(decoder);
@@ -40,10 +43,12 @@ RockMediaPlayerRef rock_media_player_create(const RockDecoderRef decoder, RockRe
     return player;
 }
 
-void rock_media_player_deallocate(RockMediaPlayerRef player) {
-    if (player == NULL) {
+void rock_media_player_deallocate(RPObjectRef obj) {
+    if (obj == NULL) {
         return;
     }
+    
+    RockMediaPlayer *player = (RockMediaPlayer *)obj;
     
     RPRelease(player->context.decoder);
     RPRelease(player->context.render);
