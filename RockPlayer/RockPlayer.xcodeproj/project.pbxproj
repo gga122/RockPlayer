@@ -6,9 +6,23 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BA5EBA5D22F33CE90030E970 /* RockDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5EBA5B22F33CE90030E970 /* RockDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA5EBA5E22F33CE90030E970 /* RockDecoder.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5EBA5C22F33CE90030E970 /* RockDecoder.c */; };
+		BA5EBA6122F33DE20030E970 /* RockISA.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5EBA5F22F33D7D0030E970 /* RockISA.h */; };
+		BA5EBA6222F33DEB0030E970 /* RockDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5EBA5922F33B580030E970 /* RockDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA5EBA6422F33EBC0030E970 /* RockISA.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5EBA6322F33EBC0030E970 /* RockISA.c */; };
+		BA5EBA6722F3406C0030E970 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5EBA6622F3406C0030E970 /* libc.tbd */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BA5EBA4E22F336E60030E970 /* libRockPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRockPlayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA5EBA5922F33B580030E970 /* RockPlayerDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RockPlayerDefines.h; sourceTree = "<group>"; };
+		BA5EBA5922F33B580030E970 /* RockDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RockDefines.h; sourceTree = "<group>"; };
+		BA5EBA5B22F33CE90030E970 /* RockDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RockDecoder.h; sourceTree = "<group>"; };
+		BA5EBA5C22F33CE90030E970 /* RockDecoder.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RockDecoder.c; sourceTree = "<group>"; };
+		BA5EBA5F22F33D7D0030E970 /* RockISA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RockISA.h; sourceTree = "<group>"; };
+		BA5EBA6322F33EBC0030E970 /* RockISA.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RockISA.c; sourceTree = "<group>"; };
+		BA5EBA6622F3406C0030E970 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -16,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5EBA6722F3406C0030E970 /* libc.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -25,8 +40,12 @@
 		BA5EBA4522F336E60030E970 = {
 			isa = PBXGroup;
 			children = (
+				BA5EBA5822F33AD00030E970 /* Private Header */,
+				BA5EBA5722F33ACA0030E970 /* Project Header */,
+				BA5EBA5622F33AB60030E970 /* Public Header */,
 				BA5EBA5522F33AA50030E970 /* Source */,
 				BA5EBA4F22F336E60030E970 /* Products */,
+				BA5EBA6522F3406C0030E970 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,9 +60,8 @@
 		BA5EBA5522F33AA50030E970 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				BA5EBA5822F33AD00030E970 /* Private Header */,
-				BA5EBA5722F33ACA0030E970 /* Project Header */,
-				BA5EBA5622F33AB60030E970 /* Public Header */,
+				BA5EBA6322F33EBC0030E970 /* RockISA.c */,
+				BA5EBA5C22F33CE90030E970 /* RockDecoder.c */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -51,7 +69,8 @@
 		BA5EBA5622F33AB60030E970 /* Public Header */ = {
 			isa = PBXGroup;
 			children = (
-				BA5EBA5922F33B580030E970 /* RockPlayerDefines.h */,
+				BA5EBA5922F33B580030E970 /* RockDefines.h */,
+				BA5EBA5B22F33CE90030E970 /* RockDecoder.h */,
 			);
 			path = "Public Header";
 			sourceTree = "<group>";
@@ -59,6 +78,7 @@
 		BA5EBA5722F33ACA0030E970 /* Project Header */ = {
 			isa = PBXGroup;
 			children = (
+				BA5EBA5F22F33D7D0030E970 /* RockISA.h */,
 			);
 			path = "Project Header";
 			sourceTree = "<group>";
@@ -70,6 +90,14 @@
 			path = "Private Header";
 			sourceTree = "<group>";
 		};
+		BA5EBA6522F3406C0030E970 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA5EBA6622F3406C0030E970 /* libc.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -77,6 +105,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5EBA5D22F33CE90030E970 /* RockDecoder.h in Headers */,
+				BA5EBA6222F33DEB0030E970 /* RockDefines.h in Headers */,
+				BA5EBA6122F33DE20030E970 /* RockISA.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +167,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5EBA6422F33EBC0030E970 /* RockISA.c in Sources */,
+				BA5EBA5E22F33CE90030E970 /* RockDecoder.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +292,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24QJT553GT;
 				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/Private Header\"",
+					"\"$(SRCROOT)/Project Header\"",
+					"\"$(SRCROOT)/Public Header\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -270,6 +308,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24QJT553GT;
 				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/Private Header\"",
+					"\"$(SRCROOT)/Project Header\"",
+					"\"$(SRCROOT)/Public Header\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
