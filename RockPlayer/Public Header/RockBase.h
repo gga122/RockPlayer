@@ -9,7 +9,9 @@
 #ifndef RockBase_h
 #define RockBase_h
 
+#include <stdio.h>
 #include "RockAvailability.h"
+
 
 #if __LP64__
 typedef float RPFloat;

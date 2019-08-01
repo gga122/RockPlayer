@@ -14,6 +14,10 @@
 		BA5EBA6422F33EBC0030E970 /* RockISA.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5EBA6322F33EBC0030E970 /* RockISA.c */; };
 		BA5EBA6722F3406C0030E970 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5EBA6622F3406C0030E970 /* libc.tbd */; };
 		BA5EBA6922F3435E0030E970 /* RockAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5EBA6822F3435E0030E970 /* RockAvailability.h */; };
+		BA5EBA6C22F3478A0030E970 /* RockRender.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5EBA6A22F3478A0030E970 /* RockRender.h */; };
+		BA5EBA6D22F3478A0030E970 /* RockRender.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5EBA6B22F3478A0030E970 /* RockRender.c */; };
+		BA5EBA7022F348670030E970 /* RockEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5EBA6E22F348670030E970 /* RockEncoder.h */; };
+		BA5EBA7122F348670030E970 /* RockEncoder.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5EBA6F22F348670030E970 /* RockEncoder.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		BA5EBA6322F33EBC0030E970 /* RockISA.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RockISA.c; sourceTree = "<group>"; };
 		BA5EBA6622F3406C0030E970 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
 		BA5EBA6822F3435E0030E970 /* RockAvailability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RockAvailability.h; sourceTree = "<group>"; };
+		BA5EBA6A22F3478A0030E970 /* RockRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RockRender.h; sourceTree = "<group>"; };
+		BA5EBA6B22F3478A0030E970 /* RockRender.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RockRender.c; sourceTree = "<group>"; };
+		BA5EBA6E22F348670030E970 /* RockEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RockEncoder.h; sourceTree = "<group>"; };
+		BA5EBA6F22F348670030E970 /* RockEncoder.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RockEncoder.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +71,9 @@
 			isa = PBXGroup;
 			children = (
 				BA5EBA6322F33EBC0030E970 /* RockISA.c */,
+				BA5EBA6F22F348670030E970 /* RockEncoder.c */,
 				BA5EBA5C22F33CE90030E970 /* RockDecoder.c */,
+				BA5EBA6B22F3478A0030E970 /* RockRender.c */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -73,7 +83,9 @@
 			children = (
 				BA5EBA6822F3435E0030E970 /* RockAvailability.h */,
 				BA5EBA5922F33B580030E970 /* RockBase.h */,
+				BA5EBA6E22F348670030E970 /* RockEncoder.h */,
 				BA5EBA5B22F33CE90030E970 /* RockDecoder.h */,
+				BA5EBA6A22F3478A0030E970 /* RockRender.h */,
 			);
 			path = "Public Header";
 			sourceTree = "<group>";
@@ -108,10 +120,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5EBA7022F348670030E970 /* RockEncoder.h in Headers */,
 				BA5EBA5D22F33CE90030E970 /* RockDecoder.h in Headers */,
 				BA5EBA6222F33DEB0030E970 /* RockBase.h in Headers */,
 				BA5EBA6922F3435E0030E970 /* RockAvailability.h in Headers */,
 				BA5EBA6122F33DE20030E970 /* RockISA.h in Headers */,
+				BA5EBA6C22F3478A0030E970 /* RockRender.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +186,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA5EBA6422F33EBC0030E970 /* RockISA.c in Sources */,
+				BA5EBA7122F348670030E970 /* RockEncoder.c in Sources */,
 				BA5EBA5E22F33CE90030E970 /* RockDecoder.c in Sources */,
+				BA5EBA6D22F3478A0030E970 /* RockRender.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

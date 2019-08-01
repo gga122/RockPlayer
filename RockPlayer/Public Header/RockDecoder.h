@@ -9,9 +9,11 @@
 #ifndef RockDecoder_h
 #define RockDecoder_h
 
-#include <stdio.h>
 #include "RockBase.h"
 
+typedef const struct RockDecoder *RockDecoderRef;
+
+RP_EXPORT RockDecoderRef rock_decoder_create(void) RP_NULLABLE;
 
 
 

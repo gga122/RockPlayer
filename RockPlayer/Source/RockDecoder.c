@@ -7,3 +7,14 @@
 //
 
 #include "RockDecoder.h"
+#include "RockISA.h"
+
+struct RockDecoder {
+    RockISA isa;
+    
+};
+
+RockDecoderRef rock_decoder_create(void) {
+    return NULL;
+}
+

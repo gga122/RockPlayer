@@ -26,5 +26,7 @@
 #define RP_INLINE static __inline
 #endif
 
+#define RP_NULLABLE
+#define RP_NONNULL
 
 #endif /* RockAvailability_h */
