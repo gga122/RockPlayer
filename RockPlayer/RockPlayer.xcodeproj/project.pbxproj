@@ -8,6 +8,7 @@
 
 /* Begin PBXFileReference section */
 		BA5EBA4E22F336E60030E970 /* libRockPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRockPlayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA5EBA5922F33B580030E970 /* RockPlayerDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RockPlayerDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +25,7 @@
 		BA5EBA4522F336E60030E970 = {
 			isa = PBXGroup;
 			children = (
+				BA5EBA5522F33AA50030E970 /* Source */,
 				BA5EBA4F22F336E60030E970 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -34,6 +36,38 @@
 				BA5EBA4E22F336E60030E970 /* libRockPlayer.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BA5EBA5522F33AA50030E970 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BA5EBA5822F33AD00030E970 /* Private Header */,
+				BA5EBA5722F33ACA0030E970 /* Project Header */,
+				BA5EBA5622F33AB60030E970 /* Public Header */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		BA5EBA5622F33AB60030E970 /* Public Header */ = {
+			isa = PBXGroup;
+			children = (
+				BA5EBA5922F33B580030E970 /* RockPlayerDefines.h */,
+			);
+			path = "Public Header";
+			sourceTree = "<group>";
+		};
+		BA5EBA5722F33ACA0030E970 /* Project Header */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Project Header";
+			sourceTree = "<group>";
+		};
+		BA5EBA5822F33AD00030E970 /* Private Header */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Private Header";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
