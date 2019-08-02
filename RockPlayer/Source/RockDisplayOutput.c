@@ -7,3 +7,8 @@
 //
 
 #include "RockDisplayOutput.h"
+
+struct RockDisplayOutput {
+    
+};
+

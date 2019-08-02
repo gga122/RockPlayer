@@ -11,6 +11,6 @@
 
 #include "RockBase.h"
 
-
+typedef const struct RockDisplayOutput * RockDisplayOutputRef;
 
 #endif /* RockDisplayOutput_h */

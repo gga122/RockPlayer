@@ -10,9 +10,11 @@
 #define RockRender_h
 
 #include "RockBase.h"
+#include "RockDisplayOutput.h"
+#include "RockSoundOutput.h"
 
-typedef const struct RockRender * RockRenderRef;
+typedef struct RockRender * RockRenderRef;
 
-RP_EXPORT RockRenderRef rock_render_create(void) RP_NULLABLE;
+RP_EXPORT RockRenderRef rock_render_create(RockDisplayOutputRef display, RockSoundOutputRef sound) RP_NULLABLE;
 
 #endif /* RockRender_h */

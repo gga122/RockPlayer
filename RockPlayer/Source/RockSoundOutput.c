@@ -7,3 +7,7 @@
 //
 
 #include "RockSoundOutput.h"
+
+struct RockSoundOutput {
+    
+};

@@ -11,4 +11,6 @@
 
 #include "RockBase.h"
 
+typedef const struct RockSoundOutput * RockSoundOutputRef;
+
 #endif /* RockSoundOutput_h */

@@ -11,6 +11,8 @@
 
 #include "RockBase.h"
 
+typedef const struct RockDisplayOutputOpenGLContext * RockDisplayOutputOpenGLContextRef;
 
+RP_EXPORT RockDisplayOutputOpenGLContextRef rock_display_output_opengl_create(void) RP_NULLABLE;
 
 #endif /* RockDisplayOutputOpenGL_h */
