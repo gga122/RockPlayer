@@ -13,4 +13,17 @@
 
 typedef const struct RockDisplayOutput * RockDisplayOutputRef;
 
+enum RockDisplayType {
+    RockDisplayOpenGL       = 0,
+#if RP_SUPPORT_METAL
+    RockDisplayMetal        = 1,
+#endif
+#if RP_SUPPORT_DIRECTX
+    RockDisplayDirectX      = 2,
+#endif
+};
+typedef enum RockDisplayType RockDisplayType;
+
+RP_EXPORT RockDisplayOutputRef rock_display_output_create(RockDisplayType type);
+
 #endif /* RockDisplayOutput_h */

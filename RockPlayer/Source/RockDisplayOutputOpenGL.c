@@ -13,7 +13,6 @@ struct RockDisplayOutputOpenGLContext {
     
 };
 
-
 RockDisplayOutputOpenGLContextRef rock_display_output_opengl_create(void) {
     return NULL;
 }

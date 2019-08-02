@@ -22,11 +22,11 @@
 		BA5EBA7522F34A640030E970 /* RockMediaPlayer.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5EBA7322F34A640030E970 /* RockMediaPlayer.c */; };
 		BA5EBA7822F34EBD0030E970 /* RockTime.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5EBA7622F34EBD0030E970 /* RockTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA5EBA7922F34EBD0030E970 /* RockTime.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5EBA7722F34EBD0030E970 /* RockTime.c */; };
-		BA5EBA7C22F49B790030E970 /* RockDisplayOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5EBA7A22F49B790030E970 /* RockDisplayOutput.h */; };
+		BA5EBA7C22F49B790030E970 /* RockDisplayOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5EBA7A22F49B790030E970 /* RockDisplayOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA5EBA7D22F49B790030E970 /* RockDisplayOutput.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5EBA7B22F49B790030E970 /* RockDisplayOutput.c */; };
 		BA5EBA8022F49B990030E970 /* RockSoundOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5EBA7E22F49B990030E970 /* RockSoundOutput.h */; };
 		BA5EBA8122F49B990030E970 /* RockSoundOutput.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5EBA7F22F49B990030E970 /* RockSoundOutput.c */; };
-		BA5EBA8422F49C0C0030E970 /* RockDisplayOutputOpenGL.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5EBA8222F49C0C0030E970 /* RockDisplayOutputOpenGL.h */; };
+		BA5EBA8422F49C0C0030E970 /* RockDisplayOutputOpenGL.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5EBA8222F49C0C0030E970 /* RockDisplayOutputOpenGL.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		BA5EBA8522F49C0C0030E970 /* RockDisplayOutputOpenGL.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5EBA8322F49C0C0030E970 /* RockDisplayOutputOpenGL.c */; };
 		BA5EBA8722F49C8B0030E970 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5EBA8622F49C8B0030E970 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
@@ -115,7 +115,6 @@
 				BA5EBA6E22F348670030E970 /* RockEncoder.h */,
 				BA5EBA5B22F33CE90030E970 /* RockDecoder.h */,
 				BA5EBA7A22F49B790030E970 /* RockDisplayOutput.h */,
-				BA5EBA8222F49C0C0030E970 /* RockDisplayOutputOpenGL.h */,
 				BA5EBA7E22F49B990030E970 /* RockSoundOutput.h */,
 				BA5EBA6A22F3478A0030E970 /* RockRender.h */,
 				BA5EBA7222F34A640030E970 /* RockMediaPlayer.h */,
@@ -134,6 +133,7 @@
 		BA5EBA5822F33AD00030E970 /* Private Header */ = {
 			isa = PBXGroup;
 			children = (
+				BA5EBA8222F49C0C0030E970 /* RockDisplayOutputOpenGL.h */,
 			);
 			path = "Private Header";
 			sourceTree = "<group>";

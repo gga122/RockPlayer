@@ -29,4 +29,9 @@
 #define RP_NULLABLE
 #define RP_NONNULL
 
+#define RP_SUPPORT_METAL 1
+
+#define RP_SUPPORT_DIRECTX 1
+
+
 #endif /* RockAvailability_h */
