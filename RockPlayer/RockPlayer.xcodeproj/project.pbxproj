@@ -26,6 +26,8 @@
 		BA5EBA7D22F49B790030E970 /* RockDisplayOutput.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5EBA7B22F49B790030E970 /* RockDisplayOutput.c */; };
 		BA5EBA8022F49B990030E970 /* RockSoundOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5EBA7E22F49B990030E970 /* RockSoundOutput.h */; };
 		BA5EBA8122F49B990030E970 /* RockSoundOutput.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5EBA7F22F49B990030E970 /* RockSoundOutput.c */; };
+		BA5EBA8422F49C0C0030E970 /* RockDisplayOutputOpenGL.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5EBA8222F49C0C0030E970 /* RockDisplayOutputOpenGL.h */; };
+		BA5EBA8522F49C0C0030E970 /* RockDisplayOutputOpenGL.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5EBA8322F49C0C0030E970 /* RockDisplayOutputOpenGL.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		BA5EBA7B22F49B790030E970 /* RockDisplayOutput.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RockDisplayOutput.c; sourceTree = "<group>"; };
 		BA5EBA7E22F49B990030E970 /* RockSoundOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RockSoundOutput.h; sourceTree = "<group>"; };
 		BA5EBA7F22F49B990030E970 /* RockSoundOutput.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RockSoundOutput.c; sourceTree = "<group>"; };
+		BA5EBA8222F49C0C0030E970 /* RockDisplayOutputOpenGL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RockDisplayOutputOpenGL.h; sourceTree = "<group>"; };
+		BA5EBA8322F49C0C0030E970 /* RockDisplayOutputOpenGL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RockDisplayOutputOpenGL.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 				BA5EBA6F22F348670030E970 /* RockEncoder.c */,
 				BA5EBA5C22F33CE90030E970 /* RockDecoder.c */,
 				BA5EBA7B22F49B790030E970 /* RockDisplayOutput.c */,
+				BA5EBA8322F49C0C0030E970 /* RockDisplayOutputOpenGL.c */,
 				BA5EBA7F22F49B990030E970 /* RockSoundOutput.c */,
 				BA5EBA6B22F3478A0030E970 /* RockRender.c */,
 				BA5EBA7322F34A640030E970 /* RockMediaPlayer.c */,
@@ -107,6 +112,7 @@
 				BA5EBA6E22F348670030E970 /* RockEncoder.h */,
 				BA5EBA5B22F33CE90030E970 /* RockDecoder.h */,
 				BA5EBA7A22F49B790030E970 /* RockDisplayOutput.h */,
+				BA5EBA8222F49C0C0030E970 /* RockDisplayOutputOpenGL.h */,
 				BA5EBA7E22F49B990030E970 /* RockSoundOutput.h */,
 				BA5EBA6A22F3478A0030E970 /* RockRender.h */,
 				BA5EBA7222F34A640030E970 /* RockMediaPlayer.h */,
@@ -152,6 +158,7 @@
 				BA5EBA7C22F49B790030E970 /* RockDisplayOutput.h in Headers */,
 				BA5EBA6122F33DE20030E970 /* RockISA.h in Headers */,
 				BA5EBA6C22F3478A0030E970 /* RockRender.h in Headers */,
+				BA5EBA8422F49C0C0030E970 /* RockDisplayOutputOpenGL.h in Headers */,
 				BA5EBA7822F34EBD0030E970 /* RockTime.h in Headers */,
 				BA5EBA7422F34A640030E970 /* RockMediaPlayer.h in Headers */,
 			);
@@ -214,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA5EBA6422F33EBC0030E970 /* RockISA.c in Sources */,
+				BA5EBA8522F49C0C0030E970 /* RockDisplayOutputOpenGL.c in Sources */,
 				BA5EBA7122F348670030E970 /* RockEncoder.c in Sources */,
 				BA5EBA7D22F49B790030E970 /* RockDisplayOutput.c in Sources */,
 				BA5EBA8122F49B990030E970 /* RockSoundOutput.c in Sources */,
