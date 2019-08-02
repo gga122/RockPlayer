@@ -22,6 +22,10 @@
 		BA5EBA7522F34A640030E970 /* RockMediaPlayer.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5EBA7322F34A640030E970 /* RockMediaPlayer.c */; };
 		BA5EBA7822F34EBD0030E970 /* RockTime.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5EBA7622F34EBD0030E970 /* RockTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA5EBA7922F34EBD0030E970 /* RockTime.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5EBA7722F34EBD0030E970 /* RockTime.c */; };
+		BA5EBA7C22F49B790030E970 /* RockDisplayOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5EBA7A22F49B790030E970 /* RockDisplayOutput.h */; };
+		BA5EBA7D22F49B790030E970 /* RockDisplayOutput.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5EBA7B22F49B790030E970 /* RockDisplayOutput.c */; };
+		BA5EBA8022F49B990030E970 /* RockSoundOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5EBA7E22F49B990030E970 /* RockSoundOutput.h */; };
+		BA5EBA8122F49B990030E970 /* RockSoundOutput.c in Sources */ = {isa = PBXBuildFile; fileRef = BA5EBA7F22F49B990030E970 /* RockSoundOutput.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,10 @@
 		BA5EBA7322F34A640030E970 /* RockMediaPlayer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RockMediaPlayer.c; sourceTree = "<group>"; };
 		BA5EBA7622F34EBD0030E970 /* RockTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RockTime.h; sourceTree = "<group>"; };
 		BA5EBA7722F34EBD0030E970 /* RockTime.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RockTime.c; sourceTree = "<group>"; };
+		BA5EBA7A22F49B790030E970 /* RockDisplayOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RockDisplayOutput.h; sourceTree = "<group>"; };
+		BA5EBA7B22F49B790030E970 /* RockDisplayOutput.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RockDisplayOutput.c; sourceTree = "<group>"; };
+		BA5EBA7E22F49B990030E970 /* RockSoundOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RockSoundOutput.h; sourceTree = "<group>"; };
+		BA5EBA7F22F49B990030E970 /* RockSoundOutput.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RockSoundOutput.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,8 @@
 				BA5EBA6322F33EBC0030E970 /* RockISA.c */,
 				BA5EBA6F22F348670030E970 /* RockEncoder.c */,
 				BA5EBA5C22F33CE90030E970 /* RockDecoder.c */,
+				BA5EBA7B22F49B790030E970 /* RockDisplayOutput.c */,
+				BA5EBA7F22F49B990030E970 /* RockSoundOutput.c */,
 				BA5EBA6B22F3478A0030E970 /* RockRender.c */,
 				BA5EBA7322F34A640030E970 /* RockMediaPlayer.c */,
 				BA5EBA7722F34EBD0030E970 /* RockTime.c */,
@@ -96,6 +106,8 @@
 				BA5EBA7622F34EBD0030E970 /* RockTime.h */,
 				BA5EBA6E22F348670030E970 /* RockEncoder.h */,
 				BA5EBA5B22F33CE90030E970 /* RockDecoder.h */,
+				BA5EBA7A22F49B790030E970 /* RockDisplayOutput.h */,
+				BA5EBA7E22F49B990030E970 /* RockSoundOutput.h */,
 				BA5EBA6A22F3478A0030E970 /* RockRender.h */,
 				BA5EBA7222F34A640030E970 /* RockMediaPlayer.h */,
 			);
@@ -132,10 +144,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5EBA8022F49B990030E970 /* RockSoundOutput.h in Headers */,
 				BA5EBA7022F348670030E970 /* RockEncoder.h in Headers */,
 				BA5EBA5D22F33CE90030E970 /* RockDecoder.h in Headers */,
 				BA5EBA6222F33DEB0030E970 /* RockBase.h in Headers */,
 				BA5EBA6922F3435E0030E970 /* RockAvailability.h in Headers */,
+				BA5EBA7C22F49B790030E970 /* RockDisplayOutput.h in Headers */,
 				BA5EBA6122F33DE20030E970 /* RockISA.h in Headers */,
 				BA5EBA6C22F3478A0030E970 /* RockRender.h in Headers */,
 				BA5EBA7822F34EBD0030E970 /* RockTime.h in Headers */,
@@ -201,6 +215,8 @@
 			files = (
 				BA5EBA6422F33EBC0030E970 /* RockISA.c in Sources */,
 				BA5EBA7122F348670030E970 /* RockEncoder.c in Sources */,
+				BA5EBA7D22F49B790030E970 /* RockDisplayOutput.c in Sources */,
+				BA5EBA8122F49B990030E970 /* RockSoundOutput.c in Sources */,
 				BA5EBA7522F34A640030E970 /* RockMediaPlayer.c in Sources */,
 				BA5EBA7922F34EBD0030E970 /* RockTime.c in Sources */,
 				BA5EBA5E22F33CE90030E970 /* RockDecoder.c in Sources */,
